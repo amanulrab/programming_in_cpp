@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"enter the value of n\n";
+cin>>n;
+
+for(int row=0; row<n; row++){
+    for(int col=0; col<n-row; col++){
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+for(int row=0; row<n; row++){
+    for(int col=0; col<n-row; col++){
+        cout<<row+1;
+    }
+    cout<<endl;
+}
+
+for(int row=0; row<n; row++){
+    for(int col=0; col<n-row; col++){
+        cout<<col+1;
+    }
+    cout<<endl;
+}
+
+int count=1;
+for(int row=0; row<n; row++){
+    for(int col=0; col<n-row; col++){
+        cout<<count<<"  ";
+        count++;
+    }
+    cout<<endl;
+
+}
+return 0;
+}
